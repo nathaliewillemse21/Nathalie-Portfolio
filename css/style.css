@@ -1,0 +1,54 @@
+*
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary: black;
+    --secondary: hsl(123, 50%, 100%);
+    --alternative: rgb(4, 95, 4, .8);
+    --awesome: #ad8913;}
+/* Navbar */
+.navbar {
+     background-color: rgb(228, 99, 228); 
+
+}
+img[alt="logo"] {
+    width: 5rem;}
+
+
+
+
+/* landing */
+body {
+  background-image: url('');
+ 
+  background-repeat: none;
+  
+}
+
+/* About */
+
+
+
+
+
+/* Education */
+
+
+
+
+/* My Skills */
+
+
+
+
+/* Projects */
+
+
+
+
+/*Contact  */
+
