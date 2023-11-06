@@ -1,54 +1,172 @@
-*
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* *,
+::before ::after {
+  margin: 0%;
+  padding: 0%;
+  border: border-box;
 }
-:root{
-    --primary: black;
-    --secondary: hsl(123, 50%, 100%);
-    --alternative: rgb(4, 95, 4, .8);
-    --awesome: #ad8913;}
-/* Navbar */
+
 .navbar {
-     background-color: rgb(228, 99, 228); 
-
+  background-color: rgb(15, 7, 15);
 }
-img[alt="logo"] {
-    width: 5rem;}
+/* body */
 
 
+
+
+
+body {
+  background-image: url('https://i.postimg.cc/sXxy561N/download.jpg');
+ 
+  background-repeat: repeat;
+  height: 100vh;
+}
+img[alt='school'] {
+  width: 100px;
+}
+img[alt='projects']{
+    width: 5rem;
+}
 
 
 /* landing */
-body {
-  background-image: url('');
- 
-  background-repeat: none;
-  
+img[alt='landing'] {
+    float: left;
+  width: 300px;
+  height: 400px;
+}
+.container-landing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-/* About */
+
+
+
+/* About section */
+img[alt='about']{
+    width: 350px;
+    height: 350px;
+}
+#about{
+     box-shadow: 0 0 2rem 0 rgb(237, 137, 248);
+     backdrop-filter: blur(1rem);
+     border: 1px solid-transparent;
+     background-color: rgba(90, 62, 97, 0.5);
+}
+
+
+/* skills section */
+img[alt='skills']{
+    width: 300px;
+    height: 300px;
+}
+#skills{
+     box-shadow: 0 0 2rem 0 rgb(237, 137, 248);
+     backdrop-filter: blur(1rem);
+     border: 1px solid-transparent;
+     background-color: rgba(90, 62, 97, 0.5);
+}
+
+
+
+#project{
+     box-shadow: 0 0 2rem 0 rgb(237, 137, 248);
+     backdrop-filter: blur(1rem);
+     border: 1px solid-transparent;
+     background-color: rgba(90, 62, 97, 0.5);
+}
+.card-body{
+    box-shadow: 0 0 2rem 0 rgb(237, 137, 248);
+    backdrop-filter: blur(2rem);
+    border: 1px solid-transparents;
+    background-color:rgba(90, 62, 97, 0.5);
+}
+
+
+
+/* testimonials */
+img[alt='testimonials']{
+    width: 350px;
+    height: 500px;
+}
+#testimonials{
+     box-shadow: 0 0 2rem 0 rgb(237, 137, 248);
+     backdrop-filter: blur(1rem);
+     border: 1px solid-transparent;
+     background-color: rgba(90, 62, 97, 0.5);
+}
+
+/* contact */
+#contact{
+     box-shadow: 0 0 2rem 0 rgb(237, 137, 248);
+     backdrop-filter: blur(1rem);
+     border: 1px solid-transparent;
+     background-color: rgba(90, 62, 97, 0.5);
+}
 
 
 
 
 
-/* Education */
+
+.container-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 
 
 
+.animate {
+  font-family: 'Anton';
+  background-image: linear-gradient(
+    -225deg,
+    #e8c5ec 0%,
+    #900592 29%,
+    #e941ca 67%,
+    #e8c5ec 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
 
-/* My Skills */
 
 
+.container-background {
+  background-color: rgb(104, 9, 104);
+}
 
 
-/* Projects */
+/* end */
+img[alt='testimonials'] {
+    margin: 0%;
+    padding: 0%;
+}
+ 
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+    
+  }
+}
 
 
+@media screen and (width < 700px) {
+    .about-content{
+        overflow-y: scroll;
+        height: 5rem;
+        scroll-snap-type: y mandatory;
+    }
 
-
-/*Contact  */
-
+}
