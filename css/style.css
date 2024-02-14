@@ -10,115 +10,126 @@
 }
 /* body */
 
-
-
-
-
 body {
-  background-image: url('https://i.postimg.cc/sXxy561N/download.jpg');
- 
+  background-image: url('https://i.ibb.co/MVwzgdT/laptopbg.png');
+
   background-repeat: repeat;
   height: 100vh;
 }
 img[alt='school'] {
   width: 100px;
 }
-img[alt='projects']{
-    width: 5rem;
+img[alt='projects'] {
+  width: 5rem;
 }
-
 
 /* landing */
 img[alt='landing'] {
-    float: left;
+  float: left;
   width: 300px;
   height: 400px;
 }
-.container-landing{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.container-landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-
-
 
 /* About section */
-img[alt='about']{
-    width: 350px;
-    height: 350px;
+img[alt='about'] {
+  width: 350px;
+  height: 400px;
 }
-#about{
+/* #about{
      box-shadow: 0 0 2rem 0 rgb(237, 137, 248);
      backdrop-filter: blur(1rem);
      border: 1px solid-transparent;
      background-color: rgba(90, 62, 97, 0.5);
+} */
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
 }
 
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  color: #333;
+  transform: rotateY(180deg);
+}
 
 /* skills section */
-img[alt='skills']{
-    width: 300px;
-    height: 300px;
+img[alt='skills'] {
+  width: 600px;
+  height: 700px;
 }
-#skills{
-     box-shadow: 0 0 2rem 0 rgb(237, 137, 248);
-     backdrop-filter: blur(1rem);
-     border: 1px solid-transparent;
-     background-color: rgba(90, 62, 97, 0.5);
+/* #skills {
+  box-shadow: 0 0 2rem 0 rgb(237, 137, 248);
+  backdrop-filter: blur(1rem);
+  border: 1px solid-transparent;
+  background-color: rgba(90, 62, 97, 0.5);
+} */
+
+#project {
+  box-shadow: 0 0 2rem 0 rgb(237, 137, 248);
+  backdrop-filter: blur(1rem);
+  border: 1px solid-transparent;
+  background-color: rgba(90, 62, 97, 0.5);
 }
-
-
-
-#project{
-     box-shadow: 0 0 2rem 0 rgb(237, 137, 248);
-     backdrop-filter: blur(1rem);
-     border: 1px solid-transparent;
-     background-color: rgba(90, 62, 97, 0.5);
+.card-body {
+  box-shadow: 0 0 2rem 0 rgb(237, 137, 248);
+  backdrop-filter: blur(2rem);
+  border: 1px solid-transparents;
+  background-color: rgba(90, 62, 97, 0.5);
 }
-.card-body{
-    box-shadow: 0 0 2rem 0 rgb(237, 137, 248);
-    backdrop-filter: blur(2rem);
-    border: 1px solid-transparents;
-    background-color:rgba(90, 62, 97, 0.5);
-}
-
-
 
 /* testimonials */
-img[alt='testimonials']{
-    width: 350px;
-    height: 500px;
-}
-#testimonials{
-     box-shadow: 0 0 2rem 0 rgb(237, 137, 248);
-     backdrop-filter: blur(1rem);
-     border: 1px solid-transparent;
-     background-color: rgba(90, 62, 97, 0.5);
+/* img[alt='testimonials'] {
+  width: 350px;
+  height: 500px;
+} */
+#testimonials {
+  box-shadow: 0 0 2rem 0 rgb(237, 137, 248);
+  backdrop-filter: blur(1rem);
+  border: 1px solid-transparent;
+  background-color: rgba(90, 62, 97, 0.5);
 }
 
 /* contact */
-#contact{
-     box-shadow: 0 0 2rem 0 rgb(237, 137, 248);
-     backdrop-filter: blur(1rem);
-     border: 1px solid-transparent;
-     background-color: rgba(90, 62, 97, 0.5);
+#contact {
+  box-shadow: 0 0 2rem 0 rgb(237, 137, 248);
+  backdrop-filter: blur(1rem);
+  border: 1px solid-transparent;
+  background-color: rgba(90, 62, 97, 0.5);
 }
 
-
-
-
-
-
-.container-image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.container-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-
 
 .animate {
   font-family: 'Anton';
@@ -140,33 +151,26 @@ img[alt='testimonials']{
   display: inline-block;
 }
 
-
-
 .container-background {
   background-color: rgb(104, 9, 104);
 }
 
-
 /* end */
 img[alt='testimonials'] {
-    margin: 0%;
-    padding: 0%;
+  margin: 0%;
+  padding: 0%;
 }
- 
 
 @keyframes textclip {
   to {
     background-position: 200% center;
-    
   }
 }
 
-
 @media screen and (width < 700px) {
-    .about-content{
-        overflow-y: scroll;
-        height: 5rem;
-        scroll-snap-type: y mandatory;
-    }
-
+  .about-content {
+    overflow-y: scroll;
+    height: 5rem;
+    scroll-snap-type: y mandatory;
+  }
 }
